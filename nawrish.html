@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nawrish Restaurant — Somali Kitchen, Whitechapel London</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,340;0,9..144,480;0,9..144,600;0,9..144,700;1,9..144,480&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ember: {
+            DEFAULT: '#A6431E',
+            50:  '#FBF0EA',
+            100: '#F4DBCC',
+            300: '#DE9569',
+            500: '#A6431E',
+            600: '#8C3818',
+            700: '#722C12',
+            900: '#3B160A',
+          },
+          ink: '#1B1712',
+          paper: '#FAF6EF',
+        },
+        fontFamily: {
+          display: ['Fraunces', 'serif'],
+          body: ['Inter', 'sans-serif'],
+        },
+      }
+    }
+  }
+</script>
+<style>
+  html{scroll-behavior:smooth;}
+  body{font-family:'Inter', sans-serif;}
+  .font-display{font-family:'Fraunces', serif;}
+  /* single-color duotone treatment for every photo placeholder — the site's one signature move */
+  .duotone{
+    background:
+      linear-gradient(160deg, rgba(166,67,30,0.94), rgba(27,23,18,0.96)),
+      repeating-linear-gradient(115deg, #d9c3a8 0 3px, #c9ad8c 3px 6px);
+    background-blend-mode: multiply, normal;
+  }
+  .marquee-track{ animation: marquee 22s linear infinite; }
+  @keyframes marquee{ 0%{transform:translateX(0);} 100%{transform:translateX(-50%);} }
+  .reveal{opacity:0; transform:translateY(16px); transition:opacity .7s ease, transform .7s ease;}
+  .reveal.in{opacity:1; transform:translateY(0);}
+</style>
+</head>
+<body class="bg-paper text-ink antialiased">
+
+<!-- Portfolio banner: remove this div when handing the real site over -->
+<div class="bg-ink text-paper/80 text-center text-xs sm:text-sm py-2 px-4 font-body">
+  Design concept for <span class="text-ember-300 font-semibold">Nawrish Restaurant</span> — built to show what a real website could look like. Not the restaurant's live site.
+</div>
+
+<!-- NAV -->
+<header class="sticky top-0 z-50 bg-paper/90 backdrop-blur border-b border-ink/10">
+  <nav class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
+    <div class="font-display text-xl tracking-tight">Nawrish <span class="text-ember">Restaurant</span></div>
+    <div class="hidden md:flex items-center gap-9 text-sm font-medium text-ink/70">
+      <a href="#story" class="hover:text-ember transition-colors">Our Story</a>
+      <a href="#menu" class="hover:text-ember transition-colors">Menu</a>
+      <a href="#reviews" class="hover:text-ember transition-colors">Reviews</a>
+      <a href="#visit" class="hover:text-ember transition-colors">Visit</a>
+    </div>
+    <a href="tel:+442030624849" class="hidden sm:inline-flex items-center gap-2 bg-ember text-paper text-sm font-semibold px-5 py-2.5 rounded-sm hover:bg-ember-700 transition-colors">
+      Call to Reserve
+    </a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="relative overflow-hidden">
+  <div class="duotone absolute inset-0"></div>
+  <div class="relative max-w-6xl mx-auto px-6 pt-24 pb-28 md:pt-36 md:pb-40">
+    <div class="inline-flex items-center gap-2 bg-paper/10 border border-paper/25 text-paper text-xs font-semibold tracking-wide px-3.5 py-1.5 rounded-full mb-8">
+      <span class="text-ember-300">★★★★★</span> 4.7 · 226 Google reviews
+    </div>
+    <h1 class="font-display text-paper text-5xl md:text-7xl leading-[1.02] max-w-2xl">
+      Somali food,<br><span class="italic text-ember-300 font-normal">huge portions,</span><br>bigger welcome.
+    </h1>
+    <p class="text-paper/80 text-lg max-w-md mt-7 leading-relaxed">
+      176 Commercial Road, Whitechapel — slow-cooked lamb shank, complimentary lentil soup, and spiced tea brewed the way it's meant to be. Open every day, 8am–10:30pm.
+    </p>
+    <div class="flex flex-wrap gap-4 mt-9">
+      <a href="#menu" class="bg-ember hover:bg-ember-700 text-paper font-semibold text-sm px-7 py-3.5 rounded-sm transition-colors">See the Menu</a>
+      <a href="#visit" class="border border-paper/40 hover:border-paper text-paper font-semibold text-sm px-7 py-3.5 rounded-sm transition-colors">Get Directions →</a>
+    </div>
+  </div>
+</section>
+
+<!-- STRIP -->
+<div class="bg-ember text-paper overflow-hidden py-2.5">
+  <div class="flex whitespace-nowrap marquee-track w-max text-xs font-semibold tracking-widest uppercase">
+    <div class="flex items-center gap-3 px-4">
+      <span>Halal Kitchen</span><span class="opacity-50">✦</span>
+      <span>Complimentary Lentil Soup</span><span class="opacity-50">✦</span>
+      <span>Open 7 Days · 8am–10:30pm</span><span class="opacity-50">✦</span>
+      <span>Dine-in &amp; Takeaway</span><span class="opacity-50">✦</span>
+    </div>
+    <div class="flex items-center gap-3 px-4" aria-hidden="true">
+      <span>Halal Kitchen</span><span class="opacity-50">✦</span>
+      <span>Complimentary Lentil Soup</span><span class="opacity-50">✦</span>
+      <span>Open 7 Days · 8am–10:30pm</span><span class="opacity-50">✦</span>
+      <span>Dine-in &amp; Takeaway</span><span class="opacity-50">✦</span>
+    </div>
+  </div>
+</div>
+
+<!-- STORY -->
+<section id="story" class="py-24 md:py-32">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+    <div class="aspect-[4/5] rounded-sm duotone flex items-center justify-center p-8">
+      <p class="text-paper/60 text-xs text-center border border-paper/25 rounded-sm px-5 py-8">Photo slot — dining room or a plated haniid platter<br>(replace with a real photo, keep the ember duotone filter for brand consistency)</p>
+    </div>
+    <div>
+      <div class="text-ember font-semibold text-xs tracking-[0.18em] uppercase mb-4">Our Story</div>
+      <h2 class="font-display text-4xl md:text-5xl mb-6 leading-tight">A taste of Somalia on Commercial Road</h2>
+      <p class="text-ink/70 leading-relaxed mb-4">Nawrish has become a Whitechapel favourite for guests trying Somali food for the first time — known for portions built for sharing, a warm complimentary lentil soup and banana to start, and staff who take the time to walk you through the menu.</p>
+      <p class="text-ink/70 leading-relaxed">Every plate leans on the same principle: generous, flavourful, and unmistakably home-cooked — finished with a cup of freshly brewed spiced tea.</p>
+      <div class="flex gap-10 mt-9">
+        <div class="border-l-2 border-ember pl-4">
+          <div class="font-display text-3xl">4.7★</div>
+          <div class="text-xs uppercase tracking-wide text-ink/50">Google Rating</div>
+        </div>
+        <div class="border-l-2 border-ember pl-4">
+          <div class="font-display text-3xl">226</div>
+          <div class="text-xs uppercase tracking-wide text-ink/50">Reviews</div>
+        </div>
+        <div class="border-l-2 border-ember pl-4">
+          <div class="font-display text-3xl">7/7</div>
+          <div class="text-xs uppercase tracking-wide text-ink/50">Days Open</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MENU -->
+<section id="menu" class="py-24 md:py-32 bg-ink text-paper">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="max-w-lg mb-16">
+      <div class="text-ember-300 font-semibold text-xs tracking-[0.18em] uppercase mb-4">What People Order</div>
+      <h2 class="font-display text-4xl md:text-5xl leading-tight">The dishes reviewers keep mentioning</h2>
+      <p class="text-paper/60 mt-4">Pulled straight from what guests talk about most — swap in the full menu and real prices when this goes live.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-paper/[0.04] border border-paper/10 rounded-sm overflow-hidden hover:border-ember/60 transition-colors">
+        <div class="h-40 duotone flex items-center justify-center text-paper/50 text-xs">Photo: Lamb Shank</div>
+        <div class="p-6">
+          <div class="flex justify-between items-baseline mb-2">
+            <h3 class="font-display text-xl">Lamb Shank &amp; Rice</h3>
+            <span class="text-ember-300 font-semibold text-sm">£[00]</span>
+          </div>
+          <p class="text-paper/60 text-sm leading-relaxed">The most-recommended dish on the menu — tender shank, stacks of spiced rice, served on a sharing-sized plate.</p>
+        </div>
+      </div>
+      <div class="bg-paper/[0.04] border border-paper/10 rounded-sm overflow-hidden hover:border-ember/60 transition-colors">
+        <div class="h-40 duotone flex items-center justify-center text-paper/50 text-xs">Photo: Lentil Soup</div>
+        <div class="p-6">
+          <div class="flex justify-between items-baseline mb-2">
+            <h3 class="font-display text-xl">Lentil Soup &amp; Banana</h3>
+            <span class="text-ember-300 font-semibold text-sm">Complimentary</span>
+          </div>
+          <p class="text-paper/60 text-sm leading-relaxed">The welcome starter every table gets before the mains arrive — a warm, simple opener guests remember.</p>
+        </div>
+      </div>
+      <div class="bg-paper/[0.04] border border-paper/10 rounded-sm overflow-hidden hover:border-ember/60 transition-colors">
+        <div class="h-40 duotone flex items-center justify-center text-paper/50 text-xs">Photo: Spiced Tea</div>
+        <div class="p-6">
+          <div class="flex justify-between items-baseline mb-2">
+            <h3 class="font-display text-xl">Somali Spiced Tea</h3>
+            <span class="text-ember-300 font-semibold text-sm">£[0]</span>
+          </div>
+          <p class="text-paper/60 text-sm leading-relaxed">Reviewers call it "not to be missed" — brewed with warming spice, served hot to finish the meal.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews" class="py-24 md:py-32">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-ember font-semibold text-xs tracking-[0.18em] uppercase mb-4 text-center">On Google</div>
+    <h2 class="font-display text-4xl md:text-5xl text-center mb-16">What guests are saying</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-ember-50 border border-ember-100 rounded-sm p-7">
+        <div class="text-ember-300 mb-3">★★★★★</div>
+        <p class="text-ink/75 text-sm leading-relaxed mb-4">"First time trying Somali food — delicious, huge portions, and staff who explained the dishes to us as we ordered."</p>
+        <div class="text-xs font-semibold text-ink/50 uppercase tracking-wide">Google Reviewer</div>
+      </div>
+      <div class="bg-ember-50 border border-ember-100 rounded-sm p-7">
+        <div class="text-ember-300 mb-3">★★★★★</div>
+        <p class="text-ink/75 text-sm leading-relaxed mb-4">Guests describe the service as attentive from the moment they sit down, with a complimentary soup and salad that sets a warm tone before the meal.</p>
+        <div class="text-xs font-semibold text-ink/50 uppercase tracking-wide">Google Reviewer</div>
+      </div>
+      <div class="bg-ember-50 border border-ember-100 rounded-sm p-7">
+        <div class="text-ember-300 mb-3">★★★★★</div>
+        <p class="text-ink/75 text-sm leading-relaxed mb-4">"The lamb shank and rice was amazing... very friendly workers... definitely will be back."</p>
+        <div class="text-xs font-semibold text-ink/50 uppercase tracking-wide">Google Reviewer</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VISIT -->
+<section id="visit" class="py-24 md:py-32 bg-ink text-paper">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid md:grid-cols-2 rounded-sm overflow-hidden border border-paper/10">
+      <div class="p-10 md:p-12">
+        <div class="text-ember-300 font-semibold text-xs tracking-[0.18em] uppercase mb-6">Visit Us</div>
+        <h3 class="font-display text-3xl mb-8">Nawrish Restaurant</h3>
+
+        <div class="flex gap-4 mb-6">
+          <div class="text-ember-300">📍</div>
+          <div>
+            <div class="text-xs uppercase tracking-wide text-paper/45 mb-1">Address</div>
+            <div class="text-paper/90">176 Commercial Road, London E1 2JY</div>
+          </div>
+        </div>
+        <div class="flex gap-4 mb-6">
+          <div class="text-ember-300">📞</div>
+          <div>
+            <div class="text-xs uppercase tracking-wide text-paper/45 mb-1">Phone</div>
+            <a href="tel:+442030624849" class="text-paper/90 hover:text-ember-300">+44 20 3062 4849</a>
+          </div>
+        </div>
+        <div class="flex gap-4 mb-8">
+          <div class="text-ember-300">🕐</div>
+          <div class="w-full">
+            <div class="text-xs uppercase tracking-wide text-paper/45 mb-2">Opening Hours</div>
+            <div class="text-sm text-paper/80 flex justify-between border-b border-paper/10 py-1.5"><span>Monday – Sunday</span><span class="font-semibold">8:00 AM – 10:30 PM</span></div>
+            <div class="text-xs text-paper/40 mt-2">Open every day of the week</div>
+          </div>
+        </div>
+        <a href="https://www.google.com/maps/place/Nawrish+Restaurant/@51.5145804,-0.061034,17z" target="_blank" class="inline-flex items-center gap-2 border border-paper/30 hover:border-ember-300 hover:text-ember-300 text-paper font-semibold text-sm px-6 py-3 rounded-sm transition-colors">
+          Open in Google Maps →
+        </a>
+      </div>
+      <div class="duotone min-h-[280px] flex items-center justify-center p-10">
+        <div class="text-center">
+          <div class="text-4xl mb-3">📍</div>
+          <p class="text-paper/60 text-sm max-w-[240px] mx-auto">Embed a live Google Map here using Nawrish's "Share → Embed a map" link.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-ink text-paper/50 py-10 border-t border-paper/10">
+  <div class="max-w-6xl mx-auto px-6 flex flex-wrap justify-between items-center gap-4 text-xs">
+    <div>© 2026 Nawrish Restaurant · Design concept, not the live site</div>
+    <div>Website design by <span class="text-paper/80 font-semibold">[Your Name]</span> — [your contact]</div>
+  </div>
+</footer>
+
+<script>
+  const els = document.querySelectorAll('section');
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); } });
+  }, {threshold:0.12});
+  els.forEach(s=>{ s.classList.add('reveal'); io.observe(s); });
+</script>
+
+</body>
+</html>
